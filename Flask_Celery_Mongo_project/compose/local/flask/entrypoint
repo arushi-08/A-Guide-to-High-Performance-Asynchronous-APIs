@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# if any of the commands in your code fails for any reason, the entire script fails
+set -o errexit
+# fail exit if one of your pipe command fails
+set -o pipefail
+# exits if any of your variables is not set
+set -o nounset
+
+mongodb_ready() {
+python << END
+import os
+import sys
+import urllib.parse as urlparse
+from pymongo import MongoClient
+ 
+url = "mongodb://flask_celery:flask_celery@mongodb:27017/flask_celery?authSource=admin"
+try:
+    client = MongoClient(url)
+except Exception as e:
+    print('error', e)
+    sys.exit(-1)
+sys.exit(0)
+
+END
+}
+until mongodb_ready; do
+  >&2 echo 'Waiting for MongoDB to become available...'
+  sleep 1
+done
+>&2 echo 'MongoDB is available'
+
+exec "$@"

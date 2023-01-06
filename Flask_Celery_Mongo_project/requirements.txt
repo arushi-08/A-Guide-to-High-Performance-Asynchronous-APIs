@@ -1,0 +1,9 @@
+Flask==2.0.1
+celery==5.1.2
+redis==3.5.3
+flower==1.0.0
+setuptools==57.5.0
+pymongo==4.3.2
+Flask-CeleryExt==0.3.4
+mongoengine
+flask_mongoengine

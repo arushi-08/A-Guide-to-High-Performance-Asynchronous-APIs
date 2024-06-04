@@ -14,11 +14,11 @@ Containerized Deployment: Package the entire application stack using Docker cont
 
 
 **Technologies Used** \
-Celery: robust and efficient distributed task queue system, to execute batch processing tasks asynchronously, ensuring optimal resource utilization and scalability.
+Celery: robust and efficient distributed task queue system.
 
-Redis: in-memory data structure store, as a reliable and high-performance message broker for efficient task distribution and management.
+Redis: in-memory data structure store.
 
-MongoDB: Integrate MongoDB, a scalable NoSQL database, to store and retrieve processed data, enabling efficient querying and data manipulation.
+MongoDB: scalable NoSQL database.
 
-Docker: Deploy application using Docker container for consistent and reproducible deployments across different environments.
+Docker: consistent and reproducible deployments across different environments.
 

@@ -22,3 +22,12 @@ MongoDB: scalable NoSQL database.
 
 Docker: consistent and reproducible deployments across different environments.
 
+
+## Docker setup
+### Build and start the docker containers
+`docker compose -up d`
+
+### Start Application:
+`python app.py`
+
+

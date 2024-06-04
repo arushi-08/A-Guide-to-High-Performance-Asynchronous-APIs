@@ -6,7 +6,7 @@ Asynchronous Task Execution: Utilize Celery, a powerful distributed task queue, 
 Publisher-Subscriber Pattern: Implement a decoupled architecture by adopting the Publisher-Subscriber design pattern, enabling seamless communication between different components of the system. \
 Reliable Message Queueing: Leverage Redis, an in-memory data structure store, as a reliable and high-performance message broker for efficient task distribution and management. \
 Persistent Data Storage: Integrate MongoDB, a flexible and scalable NoSQL database, to store and retrieve processed data, ensuring data integrity and enabling efficient querying. \
-Containerized Deployment: Package the entire application stack using Docker containers, facilitating consistent and reproducible deployments across different environments, from development to production. \
+Containerized Deployment: Package the entire application stack using Docker containers, facilitating consistent and reproducible deployments across different environments, from development to production.
 
 
 **Technologies Used** \
